@@ -9166,6 +9166,11 @@ hr {
     background-size: 1004.8px 900.7px;
 
 }
+
+.bgimgGate {
+    background-image:url("//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/v1/1220131/GATE1_nwzgfk.jpg")
+
+}
 .bgimgRight {
     background-image: url('../images/EngineerImg2.jpg');
 	/*background-attachment: fixed;*/

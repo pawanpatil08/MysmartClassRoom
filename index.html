@@ -19,6 +19,8 @@
 <link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="fi/flaticon.css">
 	<link rel="stylesheet" href="css/main.css">
+ <!--	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stylecss.css">  -->
 	
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
 	<link rel="stylesheet" href="css/owl.carousel.css">
@@ -69,7 +71,7 @@
 					<nav class="main-nav">
 						<ul class="clear-fix">
 							<li>
-								<a  href="index.html" class="active">Home</a>
+								<a href="#" ng-click="loadCourseData('home')" class="active">Home</a>
 								<!-- sub menu -->
 								
 								<!-- / sub menu -->
@@ -78,8 +80,8 @@
 								<a href="#">VIII - XII</a>
 								<!-- sub menu -->
 								<ul>
-									<li><a href="#">IIT-JEE</a></li>
-									<li><a href="#">NEET</a></li>
+									<li><a href="#" ng-click=loadCourseData("IIT-JEE")>IIT-JEE</a></li>
+									<li><a href="#" ng-click=loadCourseData("NEET")>NEET</a></li>
 								</ul>
 								<!-- / sub menu -->
 							</li>
@@ -130,61 +132,35 @@
 
 </header>
     
-      <div  ng-show="carouselExampleIndicators" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('images/slider1.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 class="text1">Welcome to the Future of Education..!!!</h3>
-              <p style="font-size:25px">Enjoy ONLINE & LIVE courses right at your study desk! Anytime - Anywhere</p>
-            </div>
-          </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('images/slider2.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 class="text1">Welcome to the Future of Education..!!!</h3>
-              <p style="font-size:25px">Enjoy ONLINE & LIVE courses right at your study desk! Anytime - Anywhere</p>
-            </div>
-          </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('images/slider3.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 class="text1">Welcome to the Future of Education..!!!</h3>
-              <p style="font-size:25px">Enjoy ONLINE & LIVE courses right at your study desk! Anytime - Anywhere</p>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    <div >
+      	<div ng-show="HomeCarousel" id="showFirstCourse">
+			<div data-ng-include="'./views/HomeCarousel.html'"></div>
+		</div>
+   
 		<div ng-show="showFirstCourse" id="showFirstCourse">
-			<div data-ng-include="'./views/firstYearTemplate.html'">
+			<div data-ng-include="'./views/firstYearTemplate.html'"></div>
 		</div>
+
 		<div ng-show="showGateCourse" id="showGateCourse">
-			<div data-ng-include="'./views/gateTemplate.html'">
+			<div data-ng-include="'./views/gateTemplate.html'"></div>
 		</div>
+
 		<div ng-show="showGRECourse" id="showGRECourse">
-			<div data-ng-include="'./views/GRECatTemplate.html'">
+			<div data-ng-include="'./views/GRECatTemplate.html'"></div>
+		</div>
+
+		<div ng-show="showJEECourse" id="showJEECourse">
+			<div data-ng-include="'./views/JEETemplate.html'"></div>
+		</div>
+
+		<div ng-show="showNEETCourse" id="showNEETCourse">
+			<div data-ng-include="'./views/NEETTemplate.html'"></div>
 		</div>
 		
 
-	</div>
     <!-- Page Content -->
     	<div id="home" class="page-content padding-none">
 
-       <h1 ng-show="carouselExampleIndicators" class="my-4">MY DESK & MY SPACE</h1>
+       <h1 ng-show="" class="my-4">MY DESK & MY SPACE</h1>
 
       <!-- Portfolio Section -->
 <section class="padding-section">
@@ -524,7 +500,7 @@ info@mysmartclassroom.com</a>
 				<nav class="footer-nav">
 					<ul class="clear-fix">
 						<li>
-							<a href="index.html">Home</a>
+							<a href="#" ng-click="loadCourseData('home')">Home</a>
 						</li>
 						<li>
 							<a href="#">About Us</a>
