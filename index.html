@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>My Smart Class</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="fi/flaticon.css">
+	<link rel="stylesheet" href="css/main.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/animate.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+  </head>
+
+  <body ng-app="smartClassApp" ng-controller="smartClassCtrl">
+  
+<header class="only-color">
+		<!-- header top panel -->
+		<div class="page-header-top">
+			<div class="grid-row clear-fix">
+				<address>
+					<a href="tel:123-123456789" class="phone-number"><i class="fa fa-phone"></i>+91-8275398767</a>
+					<a href="mailto:uni@domain.com" class="email"><i class="fa fa-envelope-o"></i>info@mysmartclassroom.com</a>
+				</address>
+				<div class="header-top-panel">
+					<a href="" class="fa fa-shopping-cart"></a>
+					<a href="page-login.html" class="fa fa-user login-icon"></a>
+					<div id="top_social_links_wrapper">
+					    <div class="share-toggle-button"><i class="share-icon fa fa-share-alt"></i></div>
+					    <div class="cws_social_links"><a href="https://plus.google.com/" class="cws_social_link" title="Google +"><i class="share-icon fa fa-google-plus" style="transform: matrix(0, 0, 0, 0, 0, 0);"></i></a><a href="http://twitter.com/" class="cws_social_link" title="Twitter"><i class="share-icon fa fa-twitter"></i></a><a href="http://facebook.com" class="cws_social_link" title="Facebook"><i class="share-icon fa fa-facebook"></i></a><a href="http://dribbble.com" class="cws_social_link" title="Dribbble"><i class="share-icon fa fa-dribbble"></i></a></div>
+					</div>
+					<a href="#" class="search-open"><i class="fa fa-search"></i></a>
+					<form action="#" class="clear-fix">
+						<input type="text" placeholder="Search" class="clear-fix">
+					</form>
+					
+				</div>
+			</div>
+		</div>
+		<!-- / header top panel -->
+		<!-- sticky menu -->
+		<div class="sticky-wrapper">
+			<div class="sticky-menu">
+				<div class="grid-row clear-fix">
+					<!-- logo -->
+					<a href="index.html" class="logo">
+						<img src="images/logo.jpg"/>
+						
+					</a>
+					<!-- / logo -->
+					<nav class="main-nav">
+						<ul class="clear-fix">
+							<li>
+								<a  href="index.html" class="active">Home</a>
+								<!-- sub menu -->
+								
+								<!-- / sub menu -->
+							</li>
+							<li>
+								<a href="#">VIII - XII</a>
+								<!-- sub menu -->
+								<ul>
+									<li><a href="#">IIT-JEE</a></li>
+									<li><a href="#">NEET</a></li>
+								</ul>
+								<!-- / sub menu -->
+							</li>
+								<!-- / sub mega menu -->
+							</li>
+							<li>
+								<a href="#">ENGINEERING</a>
+								<!-- sub menu -->
+								<ul>
+									<li><a href="#"  ng-click="hideCarousel()">First Year Engineering</a></li>
+									<li><a href="#">GATE,UPSC,MPSC,RRB</a></li>
+									<li><a href="#">GRE,CAT</a></li>
+								</ul>
+								<!-- / sub menu -->
+							</li>
+							<li>
+								<a href="#">SOFTWARE COURSES</a>
+								<!-- sub menu -->
+								<ul>
+									<li><a href="#">AUTOCAD</a></li>
+									<li><a href="#">MATLAB</a></li>
+									<li><a href="#">ANSYS</a></li>
+									<li><a href="#">C,C++</a></li>
+								</ul>
+								<!-- / sub menu -->
+							</li>
+							<li>
+								<a href="#">How It Works!</a>
+								<!-- sub menu -->
+								
+								<!-- / sub menu -->
+							</li>
+							<li>
+								<a href="#">About Us</a>
+								<!-- sub menu -->
+								
+								<!-- / sub menu -->
+							</li>
+							<li>
+								<a href="contact-us.html">Contact Us</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- sticky menu -->
+
+</header>
+    
+      <div  ng-show="carouselExampleIndicators" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('images/slider1.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="text1">Welcome to the Future of Education..!!!</h3>
+              <p style="font-size:25px">Enjoy ONLINE & LIVE courses right at your study desk! Anytime - Anywhere</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('images/slider2.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="text1">Welcome to the Future of Education..!!!</h3>
+              <p style="font-size:25px">Enjoy ONLINE & LIVE courses right at your study desk! Anytime - Anywhere</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('images/slider3.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="text1">Welcome to the Future of Education..!!!</h3>
+              <p style="font-size:25px">Enjoy ONLINE & LIVE courses right at your study desk! Anytime - Anywhere</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    
+		<div ng-show="showCourse" class="col" > 
+				<div class="row" style="min-height:1000px; margin-top:20px;">
+					<div class="col bgimg">
+						 <div class="title-course" style="padding-bottom: 50%;padding-top: 50%;">
+									<div class="">
+										<div >
+											<div>
+												<h1><p style="font-size: 130%;">First Year Engineering</p></h1></div>
+										</div>
+										<div >
+											<div >
+												<h4 ><p class="s-text-color-white">&nbsp;</p><p class="s-text-color-white"><strong><em style="color:white">Choose your Guidance Wisely!</em></strong></p><p class="s-text-color-white">&nbsp;</p><p class="s-text-color-white"><strong><em style="color:white">For securing the highest CGPA</em></strong></p></h4>
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>
+					
+					<div class="col" style="padding: 5%">
+					<div>
+							<label style="text-align: center; font-size:200%;font-family: helvetica, sans-serif;font-weight: bold;color: black">With us Guiding YOU, you'll have all</label> &nbsp;
+							<label style="text-align: center; font-size:200%;font-weight: bold;color: black">the time to do Everything..!!!</label>
+							<p style="text-align: justify;margin-top: 4%; font-family: helvetica, sans-serif">Sit back and <b>Chill</b>, as you can now <b>attend all the subject classes in just one day</b>; rather than allotting a single day for each. Gone are the days when people travelled for long hours to go to a coaching class, travelling long hours and struggling with the rush, to make it on time. Here, we bring all the <b> best faculties</b> that you have heard of as the best in coaching from your seniors or seen his <b>authored reference book/s</b>. The concept is simple, just register for the subject and faculty you wish to join, for which you can <b>attend their demo sessions for FREE</b> and then make your decision easier. Its like now you get the superpower of having all the best options at your fingertips. You also <b>get access to all the lectures which are recorded</b>, so you can attend any topic multiple times and anytime you want. So you practically never miss a thing. Above that get the best subject notes, test series and question banks/ blueprints for your overall preparation.
+							</br></br>
+							 We even have supporting faculties for every subjects, numbering to <b>35 Faculties/subject</b>. So, you also get the freedom to ask any <b>question/doubt any time you want</b> - either during the live session or at a time later when you are revising with the recorded lectures.
+							 </br></br>
+							 <b>YOU are given all the facilities that any student ever desired off.</b>
+							 </br></br>
+							 We Just want to see you succeeding with flying colours!!</p>
+					</div>
+					<div class="">
+						
+					</div>
+					</div>
+			  </div>
+			 <div>
+					   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+						  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						  <li data-target="#myCarousel" data-slide-to="1"></li>
+						  <li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+						  <div class="item active">
+							<img src="./images/1.png" alt="Los Angeles" style="width:100%;height:800px ">
+							<div class="carousel-content">
+								 <div class="title-course" style="padding-bottom: 50%;padding-top: 50%; margin-left: 80%; width: 100%;">
+									<div class="">
+										<div >
+											<div>
+												<h1><p style="font-size: 130%;">First Year Engineering</p></h1></div>
+										</div>
+										<div >
+											<div >
+												<h4 ><p class="s-text-color-white">&nbsp;</p><p class="s-text-color-white"><strong><em style="color:white;width: 100%;">Choose your Guidance Wisely!</em></strong></p><p class="s-text-color-white">&nbsp;</p><p class="s-text-color-white"><strong><em style="color:white">For securing the highest CGPA</em></strong></p></h4>
+											</div>
+										</div>
+									</div>
+							</div>
+    						</div>	
+						  </div>
+
+						  <div class="item">
+							<img src="./images/2.png" alt="Chicago" style="width:100%;height:800px">
+						  </div>
+						
+						  <div class="item">
+							<img src="G:\PRJ\Updateed12Nov17\Template2\images\3.png" alt="New york" style="width:100%;height:800px">
+						  </div>
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						  <span class="glyphicon glyphicon-chevron-left"></span>
+						  <span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" data-slide="next">
+						  <span class="glyphicon glyphicon-chevron-right"></span>
+						  <span class="sr-only">Next</span>
+						</a>
+					  </div>
+			</div>
+
+	  </div>
+	
+	</div>
+    <!-- Page Content -->
+    	<div id="home" class="page-content padding-none">
+
+       <h1 ng-show="carouselExampleIndicators" class="my-4">MY DESK & MY SPACE</h1>
+
+      <!-- Portfolio Section -->
+<section class="padding-section">
+			<div class="grid-row clear-fix">
+
+      <div class="row" ng-show="carouselExampleIndicators">
+        <div  class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="course-item">
+							<div class="course-hover">
+								<img src="images/1.jpg" data-at2x="images/1.jpg" alt>
+								<div class="hover-bg bg-color-1"></div>
+								
+							</div>
+							<div class="course-name clear-fix">
+								<span class="price"></span>
+							<h3><a href="#">LEARN</a></h3>
+								</div>
+							<div class="course-date bg-color-1 clear-fix">
+								
+								<div class="divider"></div>
+								<div class="description">Best Courses from around the World!!</div>
+							</div>
+						</div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="course-item">
+							<div class="course-hover">
+								<img src="images/2.jpg" data-at2x="images/2.jpg" alt="">
+								<div class="hover-bg bg-color-2"></div>
+								
+							</div>
+							<div class="course-name clear-fix">
+								<span class="price"></span>
+							<h3><a href="#">LIVE</a></h3>
+								</div>
+							<div class="course-date bg-color-2 clear-fix">
+								
+								<div class="divider"></div>
+								<div class="description">Anytime - Anywhere</div>
+							</div>
+						</div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="course-item">
+							<div class="course-hover">
+								<img src="images/3.jpg" data-at2x="images/3.jpg" alt="">
+								<div class="hover-bg bg-color-3"></div>
+								
+							</div>
+							<div class="course-name clear-fix">
+								<span class="price"></span>
+							<h3><a href="#">INTERACT</a></h3>
+								</div>
+							<div class="course-date bg-color-3 clear-fix">
+								
+								<div class="divider"></div>
+								<div class="description">Effective Doubt Resolution</div>
+							</div>
+						</div>
+        </div>
+      </div>
+	  </div>
+	  </section>
+      <!-- /.row -->
+	  <!-- / paralax section -->
+		<hr class="divider-color"/>
+		<!-- paralax section -->
+	  		<section class="fullwidth-background padding-section">
+			<div class="grid-row clear-fix">
+				<h2 class="center-text">About Us</h2>
+				<div class="grid-col-row">
+					<div class="grid-col grid-col-6">
+						<h3>Why We Are Better</h3>
+						<p>We are an organization founded by the Alumni's from IITs, IISCs and NITs. This is the platform where the experts from all over the India and World are connected by strong network .</p>
+						<!-- accordions -->
+						<div class="accordions">
+							<!-- content-title -->
+							<div class="content-title active">Donec sollicitudin lacus in felis luctus blandit?</div>
+							<!--/content-title -->
+							<!-- accordions content -->
+							<div class="content">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</div>
+							<!--/accordions content -->
+							<!-- content-title -->
+							<div class="content-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit?</div>
+							<!--/content-title -->
+							<!-- accordions content -->
+							<div class="content">Nullam elementum tristique risus nec pellentesque. Pellentesque bibendum nunc eget nunc hendrerit auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur gravida urna nisl</div>
+							<!--/accordions content -->
+							<!-- content-title -->
+							<div class="content-title">Aenean commodo ligula eget dolor. Aenean massa?</div>
+							<!--/content-title -->
+							<!-- accordions content -->
+							<div class="content">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</div>
+							<!--/accordions content -->
+							<!-- content-title -->
+							<div class="content-title">Moreno gotro ja pisit amet, consectetuer adipiscing elit?</div>
+							<!--/content-title -->
+							<!-- accordions content -->
+							<div class="content">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</div>
+							<!--/accordions content -->
+						</div>
+						<!--/accordions -->
+						<a href="" class="cws-button bt-color-3 border-radius alt icon-right">View Detail<i class="fa fa-angle-right"></i></a>
+					</div>
+					<div class="grid-col grid-col-6">
+						<div class="owl-carousel full-width-slider">
+							<div class="gallery-item picture">
+								<img src="http://placehold.it/570x380" data-at2x="http://placehold.it/570x380" alt>
+							</div>
+							<div class="gallery-item picture">
+								<img src="http://placehold.it/570x380" data-at2x="http://placehold.it/570x380" alt>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+      <!-- paralax section -->
+		<div class="parallaxed">
+			<div class="parallax-image" data-parallax-left="0.5" data-parallax-top="0.3" data-parallax-scroll-speed="0.5">
+				<img src="img/parallax.png" alt="">
+
+			</div>
+			<div class="them-mask bg-color-1"></div>
+			<div class="grid-row">
+				<div class="grid-col-row clear-fix">
+					<div class="grid-col grid-col-3 alt">
+						<div class="counter-block">
+							<i class="flaticon-book1"></i>
+							<div class="counter" data-count="356">0</div>
+							<div class="counter-name">Courses</div>
+						</div>
+					</div>
+					<div class="grid-col grid-col-3 alt">
+						<div class="counter-block">
+							<i class="flaticon-multiple"></i>
+							<div class="counter" data-count="4781">0</div>
+							<div class="counter-name">Students</div>
+						</div>							
+					</div>
+					<div class="grid-col grid-col-3 alt">
+						<div class="counter-block">
+							<i class="flaticon-pencil"></i>
+							<div class="counter" data-count="41">0</div>
+							<div class="counter-name">Lections</div>
+						</div>
+					</div>
+					<div class="grid-col grid-col-3 alt">
+						<div class="counter-block last">
+							<i class="flaticon-calendar"></i>
+							<div class="counter" data-count="120">0</div>
+							<div class="counter-name">Events</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- / paralax section -->
+      <!-- /.row -->
+
+     <!-- section -->
+		<section class="fullwidth-background padding-section">
+			<div class="grid-row">
+				<h2 class="center-text">How We Work</h2>
+				<!-- time line -->
+				<div class="time-line">
+					<div class="line-element">
+						<div class="action">
+							<div class="action-block">
+								<span><i class="flaticon-magnifier"></i></span>
+								<div class="text">
+									<h3>Search your course</h3>
+									<p>Lorem ipsum  dolor sit amet, consectetuer adipisc ing elit. Aenean commodo ligula.</p>
+								</div>
+							</div>
+						</div>
+						<div class="level">
+							<div class="level-block">Step 1</div>
+						</div>
+					</div>
+					<div class="line-element color-2">
+						<div class="level">
+							<div class="level-block">Step 2</div>
+						</div>
+						<div class="action">
+							<div class="action-block">
+								<span><i class="flaticon-computer"></i></span>
+								<div class="text">
+									<h3>Take A Sample Lesson</h3>
+									<p>Aenean massa. Cum sociis nato que penatibus et magnis dis par turient montes.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="line-element color-3">
+						<div class="action">
+							<div class="action-block">
+								<span><i class="flaticon-shopping"></i></span>
+								<div class="text">
+									<h3>Purchase the Course</h3>
+									<p>Donec quam felis, ultricies nec, pellent esque eu, pretium quis, sem. Nulla conse massa.</p>
+								</div>
+							</div>
+						</div>
+						<div class="level">
+							<div class="level-block">Step 3</div>
+						</div>
+					</div>
+				</div>
+				<!-- / time line -->
+			</div>
+		</section>
+		<!-- parallax section -->
+		<div class="parallaxed">
+			<div class="parallax-image" data-parallax-left="0.5" data-parallax-top="0.3" data-parallax-scroll-speed="0.5">
+				<img src="img/parallax.png" alt="">
+			</div>
+			<div class="them-mask bg-color-2"></div>
+			<div class="grid-row center-text">
+				<div class="font-style-1 margin-none">Get In Touch With Us</div>
+				<div class="divider-mini"></div>
+				<p class="parallax-text">To get Updates on all the Courses and get up to 50% OFF on all our courses!!</p>
+				<form class="subscribe">
+					<input type="text" name="email" value="" size="40" placeholder="Enter your email" aria-required="true"><input type="submit" value="Subscribe">
+				</form>
+			</div>
+		</div>
+		<!-- parallax section -->
+		<!-- / paralax section -->
+		<hr class="divider-color" />
+		<!-- paralax section -->
+     <!-- section -->
+		<section class="fullwidth-background testimonial padding-section">
+			<div class="grid-row">
+				<h2 class="center-text">Testimonials</h2>
+				<div class="owl-carousel testimonials-carousel">
+					<div class="gallery-item">
+						<div class="quote-avatar-author clear-fix"><img src="http://placehold.it/94x94" data-at2x="http://placehold.it/94x94" alt=""><div class="author-info">Abc<br><span>Writer</span></div></div>
+						<p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. </p>
+					</div>
+					<div class="gallery-item">
+						<div class="quote-avatar-author clear-fix"><img src="http://placehold.it/94x94" data-at2x="http://placehold.it/94x94" alt=""><div class="author-info">Xyz<br><span>Writer</span></div></div>
+						<p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. </p>
+					</div>
+					<div class="gallery-item">
+						<div class="quote-avatar-author clear-fix"><img src="http://placehold.it/94x94" data-at2x="http://placehold.it/94x94" alt=""><div class="author-info">Abc<br><span>Writer</span></div></div>
+						<p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. </p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- / section -->
+		<!-- google map -->
+		<div class="wow fadeInUp">
+			<div id="map" class="google-map"></div>
+		</div>
+		<!-- / google map -->
+
+
+
+
+	 </div>
+
+    
+	</div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+	<footer>
+    <div class="grid-row">
+			<div class="grid-col-row clear-fix">
+				<section class="grid-col grid-col-4 footer-about">
+					<h2 class="corner-radius">About Us</h2>
+					<div>
+						
+						<p>We are an organization founded by the Alumni's from IITs, IISCs and NITs. This is the platform where the experts from all over the India and World are connected by strong network .</p>
+					</div>
+					<address>
+						<p></p>
+						<a href="tel:123-123456789" class="phone-number">+91-22-24947734 / +91-8275398767</a>
+						<br />
+						<a href="mailto:uni@domain.com" class="email">
+info@mysmartclassroom.com</a>
+						<br />
+						<a href="www.sample.com" class="site">www.mysmartclassroom.com</a>
+						<br />
+						<a href="www.sample.com" class="address">N-101 & 102, New Patankar Park, CHS Ltd., <br/>Station Road, Mumbai-401203,<br/> Maharashtra, India.</a>
+					</address>
+					<div class="footer-social">
+						<a href="" class="fa fa-twitter"></a>
+						<a href="" class="fa fa-skype"></a>
+						<a href="" class="fa fa-google-plus"></a>
+						<a href="" class="fa fa-rss"></a>
+						<a href="" class="fa fa-youtube"></a>
+					</div>
+				</section>
+				<section class="grid-col grid-col-4 footer-latest">
+					<h2 class="corner-radius">Latest courses</h2>
+					<article>
+						<img src="http://placehold.it/83x83" data-at2x="http://placehold.it/83x83" alt>
+						<h3>Sed aliquet dui at auctor blandit</h3>
+						<div class="course-date">
+							<div>10<sup>00</sup></div>
+							<div>23.02.15</div>
+						</div>
+						<p>Sed pharetra lorem ut dolor dignissim,
+	sit amet pretium tortor mattis.</p>
+					</article>
+					<article>
+						<img src="http://placehold.it/83x83" data-at2x="http://placehold.it/83x83" alt>
+						<h3>Sed aliquet dui at auctor blandit</h3>
+						<div class="course-date">
+							<div>10<sup>00</sup></div>
+							<div>23.02.15</div>
+						</div>
+						<p>Sed pharetra lorem ut dolor dignissim,
+	sit amet pretium tortor mattis.</p>
+					</article>
+				</section>
+				<section class="grid-col grid-col-4 footer-contact-form">
+					<h2 class="corner-radius">apply for instructor</h2>
+					<div class="email_server_responce"></div>
+					<form action="php/contacts-process.php" class="contact-form" method="post" novalidate="novalidate">
+						<p><span class="your-name"><input type="text" name="name" value="" size="40" placeholder="Name" aria-invalid="false" required></span>
+						</p>
+						<p><span class="your-email"><input type="text" name="phone" value="" size="40" placeholder="Phone" aria-invalid="false" required></span> </p>
+						<p><span class="your-message"><textarea name="message" placeholder="Comments" cols="40" rows="5" aria-invalid="false" required></textarea></span> </p>
+						<button type="submit" class="cws-button bt-color-3 border-radius alt icon-right">Submit <i class="fa fa-angle-right"></i></button>
+					</form>
+				</section>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="grid-row clear-fix">
+				<div class="copyright">Mysmartclassroom<span></span> 2017 . All Rights Reserved</div>
+				<nav class="footer-nav">
+					<ul class="clear-fix">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="#">About Us</a>
+						</li>
+						<li>
+							<a href="#">Course</a>
+						</li>
+						
+						<li>
+							<a href="#">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</footer>
+
+   
+<!-- / footer -->
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox_packed.js"></script>
+	<script type='text/javascript' src='js/jquery.validate.min.js'></script>
+	<script src="js/jquery.form.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/app.js"></script>
+	<!-- jQuery REVOLUTION Slider  -->
+	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>		
+	
+	<script src="js/jquery.isotope.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jflickrfeed.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery.fancybox-media.js"></script>
+	<script src="js/retina.min.js"></script>
+	<script src="js/jquery.tweet.js"></script>
+  </body>
+
+</html>
