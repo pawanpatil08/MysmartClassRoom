@@ -9168,10 +9168,15 @@ hr {
 }
 
 .bgimgGate {
-    background-image:url("//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/v1/1220131/GATE1_nwzgfk.jpg")
+   background-repeat: no-repeat;
+    background-size: 883.067px 662.3px;
+    background-color: transparent;
+    background-position: -104.033px 0px;
+    background-image: url(//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/v1/1220131/GATE1_nwzgfk.jpg);
+    /*background-attachment: fixed;*/
 
 }
-.bgimgRight {
+.bgimgRight {	
     background-image: url('../images/EngineerImg2.jpg');
 	/*background-attachment: fixed;*/
 	  background-size: 1004.8px 900.7px;
@@ -9192,4 +9197,8 @@ hr {
   z-index: 20;
   color: white;
   text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.gateBannerImgs{
+	float:left; display:inline;margin:2%;
+	
 }
