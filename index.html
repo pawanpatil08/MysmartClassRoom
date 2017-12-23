@@ -163,7 +163,7 @@
        <h1 ng-show="" class="my-4">MY DESK & MY SPACE</h1>
 
       <!-- Portfolio Section -->
-<section class="padding-section">
+<section ng-show="carouselExampleIndicators" class="padding-section">
 			<div class="grid-row clear-fix">
 
       <div class="row" ng-show="carouselExampleIndicators">
@@ -226,7 +226,7 @@
 	  </section>
       <!-- /.row -->
 	  <!-- / paralax section -->
-		<hr class="divider-color"/>
+		<hr ng-show="carouselExampleIndicators" class="divider-color"/>
 		<!-- paralax section -->
 	  		<section  ng-show="carouselExampleIndicators" class="fullwidth-background padding-section">
 			<div class="grid-row clear-fix">
@@ -375,7 +375,7 @@
 			</div>
 		</section>
 		<!-- parallax section -->
-		<div class="parallaxed">
+		<div class="parallaxed" ng-show="carouselExampleIndicators">
 			<div class="parallax-image" data-parallax-left="0.5" data-parallax-top="0.3" data-parallax-scroll-speed="0.5">
 				<img src="img/parallax.png" alt="">
 			</div>
@@ -391,7 +391,7 @@
 		</div>
 		<!-- parallax section -->
 		<!-- / paralax section -->
-		<hr class="divider-color" />
+		<hr ng-show="carouselExampleIndicators" class="divider-color" />
 		<!-- paralax section -->
      <!-- section -->
 		<section ng-show="carouselExampleIndicators" class="fullwidth-background testimonial padding-section">
@@ -415,12 +415,10 @@
 		</section>
 		<!-- / section -->
 		<!-- google map -->
-		<div class="wow fadeInUp">
+		<div  ng-show="carouselExampleIndicators"class="wow fadeInUp">
 			<div id="map" class="google-map"></div>
 		</div>
 		<!-- / google map -->
-
-
 
 
 	 </div>
@@ -430,7 +428,7 @@
     <!-- /.container -->
 
     <!-- Footer -->
-	<footer>
+	<footer style="margin-top:0%">
     <div  class="grid-row">
 			<div class="grid-col-row clear-fix">
 				<section class="grid-col grid-col-4 footer-about">
