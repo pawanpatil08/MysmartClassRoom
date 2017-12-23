@@ -9276,6 +9276,21 @@ text-decoration: none;
 
 p.ex2 {
     font: italic  22px/35px helvetica, sans-serif;color: red;
-		width: 50%;display: block;text-align: center;margin-left: 25%;
+		width: 50%;display: block;text-align: center;margin-left: 25%;font-weight: bold;
 }
-
+.gateSection{
+	padding-left: 0;
+    color: black;
+	line-height: 1.4;
+    font-size: larger;
+}
+h4.italic {
+    font-style: italic;
+	color:#b3873d;display: block;text-align: center;
+}
+.overlineEffect{
+	text-decoration:line-through;
+}
+h3.Heading{
+	display: block;text-align: center;font-weight: bold;
+}
