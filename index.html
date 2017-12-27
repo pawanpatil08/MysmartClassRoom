@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="css/stylecss.css">  -->
 	
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css" />
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -101,8 +102,8 @@
 								<a href="#">SOFTWARE COURSES</a>
 								<!-- sub menu -->
 								<ul>
-									<li><a href="#">AUTOCAD</a></li>
-									<li><a href="#">MATLAB</a></li>
+									<li><a href="#" ng-click=loadCourseData("AUTOCAD")>AUTOCAD</a></li>
+									<li><a href="#" ng-click=loadCourseData("MATLAB")>MATLAB</a></li>
 									<li><a href="#">ANSYS</a></li>
 									<li><a href="#">C,C++</a></li>
 								</ul>
@@ -119,6 +120,9 @@
 								<!-- sub menu -->
 								
 								<!-- / sub menu -->
+							</li>
+							<li>
+								<a href="">My Login</a>
 							</li>
 							<li>
 								<a href="contact-us.html">Contact Us</a>
@@ -154,6 +158,14 @@
 
 		<div ng-show="showNEETCourse" id="showNEETCourse">
 			<div data-ng-include="'./views/NEETTemplate.html'"></div>
+		</div>
+
+		<div ng-show="showAUTOCADCourse" id="showAUTOCADCourse">
+			<div data-ng-include="'./views/AUTOCADTemplate.html'"></div>
+		</div>
+
+		<div ng-show="showMATTABCourse" id="showMATTABCourse">
+			<div data-ng-include="'./views/MATTABCourse.html'"></div>
 		</div>
 		
 
@@ -417,7 +429,7 @@
 		</section>
 		<!-- / section -->
 		<!-- google map -->
-		<div  ng-show="carouselExampleIndicators"class="wow fadeInUp">
+		<div  ng-show="false"class="wow fadeInUp">
 			<div id="map" class="google-map"></div>
 		</div>
 		<!-- / google map -->
@@ -546,6 +558,7 @@ info@mysmartclassroom.com</a>
 	<script src="js/jflickrfeed.min.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
 	<script src="js/jquery.fancybox-media.js"></script>
+	<script src="js/lightbox-plus-jquery.min.js"></script>
 	<script src="js/retina.min.js"></script>
 	<script src="js/jquery.tweet.js"></script>
   </body>

@@ -9224,7 +9224,7 @@ hr {
 	font-family:"source sans pro", helvetica, sans-serif;
 }
 .title-details-materials-span{
-	text-align: center;font-size: 80%; text-align: center;font-size: 100%;color: #999;font-weight: bold;
+	text-align: center;font-size: 80%; text-align: center;font-size: 120%;color: #999;font-weight: bold;
 }
 .detailsBox{
 	text-align: justify;
@@ -9293,4 +9293,23 @@ h4.italic {
 }
 h3.Heading{
 	display: block;text-align: center;font-weight: bold;
+}
+.GREbgImg {
+    background-image: url('../images/getGRE.jpg');
+	background-position:-260.401px 0px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    background-size: 1004.8px 900.7px;
+
+}
+
+.bgimgAUTO {
+	background-image: url('https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?h=1500&w=2000&fit=clip&fm=jpg');
+ 	background-position:-260.401px 0px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    background-size: 1004.8px 900.7px;
+   
+    /*background-attachment: fixed;*/
+
 }

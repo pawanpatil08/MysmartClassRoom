@@ -2,6 +2,7 @@ var app = angular.module('smartClassApp', []);
 			app.controller('smartClassCtrl', function($scope,$http) {
 			$scope.carouselExampleIndicators = true;
 			$scope.HomeCarousel=true;
+
 			$scope.loadCourseData= function(CourseTemplate){
 				switch(CourseTemplate){
 				case "firstYear":
@@ -34,6 +35,16 @@ var app = angular.module('smartClassApp', []);
 					$scope.showNEETCourse=true;
 					break;
 
+					case "AUTOCAD":
+					closeAllTemplate();
+					$scope.showAUTOCADCourse=true;
+					break;
+					
+					case "MATLAB":
+					closeAllTemplate();
+					$scope.showMATTABCourse=true;
+					break;
+
 					default:
 				}
 				
@@ -46,6 +57,8 @@ var app = angular.module('smartClassApp', []);
 					$scope.HomeCarousel=false;
 					$scope.showJEECourse=false;
 					$scope.showNEETCourse=false;
+					$scope.showAUTOCADCourse=false;
+					$scope.showMATTABCourse=false;
 			}
 			 
 });
