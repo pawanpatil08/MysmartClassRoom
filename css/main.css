@@ -9309,7 +9309,20 @@ h3.Heading{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
     background-size: 1004.8px 900.7px;
-   
-    /*background-attachment: fixed;*/
+}
 
+.bgimgMatlab {
+	background-image: url('//uploads.strikinglycdn.com/static/backgrounds/cityscape/166.jpg');
+ 	background-position:-260.401px 0px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    background-size: 1004.8px 900.7px;
+}
+.bgimgMatlabSideImage{
+	background-image: url('https://uploads.strikinglycdn.com/static/backgrounds/cityscape/146.jpg');
+ 	background-position:-260.401px 0px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    background-size: 1004.8px 900.7px;
+}
 }

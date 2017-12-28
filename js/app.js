@@ -39,10 +39,10 @@ var app = angular.module('smartClassApp', []);
 					closeAllTemplate();
 					$scope.showAUTOCADCourse=true;
 					break;
-					
+
 					case "MATLAB":
 					closeAllTemplate();
-					$scope.showMATTABCourse=true;
+					$scope.showMATLABCourse=true;
 					break;
 
 					default:
@@ -58,7 +58,7 @@ var app = angular.module('smartClassApp', []);
 					$scope.showJEECourse=false;
 					$scope.showNEETCourse=false;
 					$scope.showAUTOCADCourse=false;
-					$scope.showMATTABCourse=false;
+					$scope.showMATLABCourse=false;
 			}
 			 
 });
