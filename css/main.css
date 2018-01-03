@@ -9199,8 +9199,9 @@ hr {
   text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
 .gateBannerImgs{
-	float:left; display:inline;margin:2%;
-	
+	float: left;
+	display:inline;
+	margin:1.5%;	
 }
 
 .s-section{
